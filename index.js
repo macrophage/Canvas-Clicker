@@ -39,7 +39,7 @@ function animate() {
     singleCircle.draw();
   });
 }
-addEventListener("click", (e) => {
+addEventListener("mousedown", (e) => {
   circles.forEach((circle, index, object) => {
     if (checkX(e.clientX, circle.x) && checkY(e.clientY, circle.y)) {
       object.splice(index, 1);
